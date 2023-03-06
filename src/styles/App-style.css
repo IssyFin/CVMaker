@@ -1,0 +1,331 @@
+body{
+    background-color:lightblue;
+}
+
+#previewViewport{
+    height:950px;
+    width:700px;
+    display:flex;
+    justify-items:center;
+    background-color:white;
+}
+
+.formLists{
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    list-style:square;
+    text-align:start;
+}
+
+.checkboxLabel{
+    width:200%;
+}
+
+.formSubBlock{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows:1fr;
+    padding-right:40%;
+    gap:8px;
+    align-items:flex-start;
+}
+
+#extendableFormSubBlock{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 100px;
+    grid-auto-rows:20px;
+    padding-right:40%;
+    gap:8px;
+    align-items:flex-start;
+    height:200px;
+    /* height:auto; */
+}
+
+.formBlock{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows:1fr;
+    margin-bottom:10px;
+}
+
+#extendableFormBlock{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    padding-bottom:20px;
+    height:fit-content;
+}
+
+
+#pagebox{
+    background-color:aliceblue;
+    margin:3vh 4vw 3vh 4vw;
+    padding:3vh 4vw 3vh 4vw;
+    border-radius:5px;
+}
+
+#previewPage{
+    background-color:darkgreen;
+    gap:0px;
+    border-radius:10px;
+    /* margin-top:1vh; */
+    /* height:98vh; */
+    /* height:90%; */
+    page-break-before:always;
+    font-size:smaller;
+    height:950px;
+    width:700px;
+}
+
+#previewBox{
+    background-color:darkgreen;
+    display:grid;
+    grid-template-rows: 1fr 8fr ;
+    margin:0px 5px 0px 5px;
+    border-radius:10px;
+    /* padding-bottom:30px; */
+    /* height:98vh; */
+    /* height:90%; */
+    height:950px;
+    width:700px;
+}
+
+#photoDisc{
+    background-color:white;
+    position:absolute;
+    margin:1vw;
+    border-radius:50%;
+    height:16vh;
+    width:16vh;
+    display:flex;
+    flex:none;
+    background-size:contain;
+    border:3px solid white;
+}
+
+#nameBar{
+    background-color:darkgreen;
+    color:white;
+    font-weight:bold;
+    font-style:italic;
+    text-align:center;
+    padding-top:1vh;
+    /* height:10vh; */
+    height:10%;
+}
+
+#underNameBar{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    /* height:90%; */
+}
+
+#contentPage{
+    display:grid;
+    grid-template-rows: 1fr 6fr;
+    height:100%;
+}
+
+#personalInfoBar{
+    background-color:forestgreen;
+    color:white;
+    padding:7vh 5px 1vh 5px;
+    text-align:center;
+    display:grid;
+    grid-template-rows: 2fr 3fr 5fr;
+    box-shadow: 5px 0px 5px darkgreen;
+    border-radius:5px 0px 0px 10px;
+    /* height:75vh; */
+    /* height:90%; */
+    /* gap:5px; */
+}
+
+.personalInfoCard{
+    border-bottom:1px solid white;
+    justify-content:center;
+    align-content:center;
+    padding:10px;
+    /* height:25%; */
+    /* display:grid; */
+}
+
+#contactBar{
+    justify-content:center;
+    align-content:center;
+    padding:10px;
+    grid-template-rows: 2fr 3fr 2fr 2fr 2fr;
+    display:grid;
+    gap:2px;
+    /* height:50%; */
+}
+
+ul{
+    list-style:none;
+    text-align:center;
+    padding-left:none;
+    margin-left:none;
+}
+
+li{
+    margin-left:none;
+    padding-left:none;
+}
+
+#blurbBar{
+    background-color:green;
+    color:white;
+    padding:1vh 5vw 1vh 2vw;
+    border-radius: 0px 10px 0px 0px;
+    display:flex;
+    align-items:center;
+    /* height:12vh; */
+    /* height:25%; */
+}
+
+#mainContent{
+    background-color:white;
+    border-radius: 0px 0px 10px 0px;
+    grid-template-rows: 1fr 1fr;
+    /* height:69vh; */
+    /* height:80%; */
+}
+
+.contentSection{
+    background-color:white;
+    color:black;
+    margin:2vw;
+}
+
+#printButton{
+    border:none;
+    background-color:none;
+}
+
+h1{
+    font-weight:bold;
+}
+
+h2{
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+h4{
+    font-style:italic;
+    padding-top:2px;
+}
+
+form{
+    background-color:white;
+    border-radius:5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:2vh 13vw 2vh 2vw;
+    
+}
+
+input{
+    border:1px solid lightblue;
+    background-color:aliceblue;
+    color:black;
+    border-radius:3px;
+    width:12vw;
+}
+
+.responsibilityInputBar{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:20px 1fr;
+    grid-auto-rows:1fr;
+    height:auto;
+    gap:5px;
+    padding-left:20%;
+}
+
+.blurbInput{
+    display:flex;
+    flex:auto;
+    margin-top:0px;
+    width:80%;
+    height:80%;
+}
+
+.blurbBlock{
+    display:grid;
+    grid-template-rows: 1fr 4fr;
+    text-justify:flex-end;
+    padding-top:11px;
+    gap:0px;
+}
+
+.singleColumnInput{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    width: 20vw;
+}
+
+.jobEdu{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:5px 0px 20px 10px;
+    /* padding-top:5px; */
+    margin: 5px 30px 20px 20px;
+    border-top:0.5px solid lightgray;
+    border-bottom:0.5px solid lightgray;
+}
+
+.jobEduLeft{
+    display:grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    gap:4px;
+}
+
+.jobEduRight{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:4px;
+}
+
+.date{
+    color:gray;
+    font-style:italic;
+    font-size:medium;
+}
+
+.jobEduTitle{
+    color:black;
+    font-weight:bold;
+    font-size:medium;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+.companyCollege{
+    color:black;
+    font-size:medium;
+    font-weight:bold;
+}
+
+.jobEduLocation{
+    color:gray;
+    font-size:medium;
+}
+
+.jobEduResponsibilities{
+    color:gray;
+    font-size:small;
+    font-style:italic;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+.poweredBy{
+    display:flex;
+    justify-content:center;
+    padding-bottom:20px;
+    color:green;
+}
